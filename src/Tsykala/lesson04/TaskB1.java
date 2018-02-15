@@ -1,5 +1,7 @@
 package Tsykala.lesson04;
 
+import java.util.Scanner;
+
 /*
 Определите количество дней в году
 
@@ -26,5 +28,23 @@ package Tsykala.lesson04;
 
 */
 public class TaskB1 {
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int g = sc.nextInt();
+        int x = 366;
+        int x1 = 365;
+        if ( g % 4 == 0 ) {
+            if ( g % 100 == 0 ) {
+                if ( g % 400 == 0 ) {
+                    System.out.println("количество дней в году: " + x);
+                } else {
+                    System.out.println("количество дней в году: " + x1);
+                }
+            } else {
+                System.out.println("количество дней в году: " + x);
+            }
+        } else {
+            System.out.println("количество дней в году: " + x1);
+        }
+    }       
 }

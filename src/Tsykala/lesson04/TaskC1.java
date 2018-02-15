@@ -37,6 +37,74 @@ package Tsykala.lesson04;
 
 */
 
+import jdk.nashorn.api.tree.ForInLoopTree;
+
+import java.util.Scanner;
+
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc = new Scanner(System.in);
+        int zp = sc.nextInt();
+        if (zp > 300 && zp < 3000) {
+            for (int i = 0; i <= 14; i++) {
+                if (zp == 666 || zp + zp / 2 == 666) {
+                    break;
+                }
+                switch (i) {
+                    case 0:
+                        System.out.println("За месяц 0 начислено $0.0");
+                        break;
+                    case 1:
+                        System.out.println("За январь начислено $" + (zp + zp / 2));
+                        break;
+                    case 2:
+                        System.out.println("За февраль начислено $" + (zp + zp / 2));
+                        break;
+                    case 3:
+                        System.out.println("За март начислено $" + (zp + zp / 2));
+                        break;
+                    case 4:
+                        System.out.println("За апрель начислено $" + (zp + zp / 2));
+                        break;
+                    case 5:
+                        System.out.println("За май начислено $" + (zp + zp / 2));
+                        break;
+                    case 6:
+                        System.out.println("За июнь начислено $" + zp);
+                        break;
+                    case 7:
+                        System.out.println("За июль начислено $" + zp);
+                        break;
+                    case 8:
+                        System.out.println("За август начислено $" + zp);
+                        break;
+                    case 9:
+                        System.out.println("За сентябрь начислено $" + (zp + zp / 2));
+                        break;
+                    case 10:
+                        System.out.println("За октябрь начислено $" + (zp + zp / 2));
+                        break;
+                    case 11:
+                        System.out.println("За ноябрь начислено $" + (zp + zp / 2));
+                        break;
+                    case 12:
+                        System.out.println("За декабрь начислено $" + (zp + zp / 2));
+                        break;
+                    case 13:
+                        System.out.println("За месяц 13 начислено $0.0");
+                        break;
+                    case 14:
+                        System.out.println("За месяц 14 начислено $0.0");
+                        break;
+                }
+            }
+        }
+        else {
+            System.out.println("Мы вам перезвоним!");
+        }
+
+    }
+
 
 }
